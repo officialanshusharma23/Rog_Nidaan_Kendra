@@ -1,0 +1,202 @@
+html{
+    background-color: rgba(95, 95, 95, 0.048);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section 1 styles */
+.section1 {
+    position: relative;
+}
+
+nav {
+    /* background-color: #8885854f; */
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    
+}
+
+nav .firstpart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .firstpart img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    
+}
+
+nav h2{
+    color: black;
+    font-size: 25px;
+    cursor: default;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section 2 styles */
+.section2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.section2 h2 {
+    cursor: default;
+
+}
+
+
+.circle {
+    display: inline-block;
+    margin: 20px;
+}
+
+.circle img {
+    width: 170px; /* Adjust as needed */
+    height: 170px; /* Adjust as needed */
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+}
+
+.circle p {
+    cursor: default;
+}
+
+.circle .specialp {
+    font-size: 16px;
+    font-weight: 550;
+}
+
+/* Section 3 styles */
+.section3 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 65px;
+
+
+}
+
+.section3 h2 {
+    cursor: default;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid a img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header img {
+        height: auto;
+    }
+
+    .circle img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .section1 {
+        height: 45vh;
+    }
+
+    .section1 nav ul li a {
+        font-size: 15px;
+    }
+
+    .circle p{
+        font-size: 21px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .firstpart img {
+        height: 50px;
+        width: 50px;
+    }
+    .section2 h2{
+        font-size: 26px;
+    }
+
+    .section3 h2 {
+        font-size: 26px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section2 .circle .specialp {
+        font-weight: 550;
+        font-size: 21px;
+    }
+}
